@@ -1,0 +1,8 @@
+dependencies {
+    implementation libs.discord
+    implementation libs.unitTest
+    implementation libs.hibernate
+    implementation libs.springJpa
+    implementation libs.javax
+    implementation libs.springJpa
+}

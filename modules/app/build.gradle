@@ -1,0 +1,25 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+plugins {
+    id "org.springframework.boot" version "${springBootVersion}"
+}
+
+bootJar {
+    archivesBaseName = 'bot'
+}
+
+
+dependencies {
+    implementation project(':domain')
+    implementation project(':modules:web')
+    implementation project(':modules:discord-sender')
+    implementation project(':modules:discord-listener')
+    implementation project(':modules:app')
+
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+}

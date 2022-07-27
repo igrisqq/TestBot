@@ -1,0 +1,6 @@
+rootProject.name = 'Bot'
+include 'domain'
+include 'modules:web'
+include 'modules:discord-sender'
+include 'modules:discord-listener'
+include 'modules:app'
